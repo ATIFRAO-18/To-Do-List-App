@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgb(191, 117, 114),
+    rgba(255, 34, 0, 0.943)
+  );
+  padding: 10px;
+}
+.todo_list {
+  width: 60%;
+  background-color: #fff;
+  margin: 50px auto 40px;
+  border-radius: 10px;
+  min-height: 100vh;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px 70px;
+}
+.heading h2 {
+  color: rgb(214, 30, 20);
+  font-size: 40px;
+}
+.heading img {
+  height: 50px;
+  width: 50px;
+}
+
+.input {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  border-radius: 12px;
+}
+.input input {
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #e9e9e9;
+  width: 100%;
+}
+.addBtn {
+  background: linear-gradient(
+    135deg,
+    rgb(191, 117, 114),
+    rgba(255, 34, 0, 0.943)
+  );
+  color: #fff;
+  border: 0;
+  height: 40px;
+  width: 85px;
+  position: absolute;
+  border-radius: 10px;
+  right: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ul li {
+  font-size: 20px;
+  line-height: 40px;
+  margin: auto;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 300;
+  width: 84%;
+  user-select: none;
+  margin-top: 10px;
+  overflow-wrap: anywhere;
+  padding: 12px 80px 12px 60px;
+  position: relative;
+}
+
+ul li::before {
+  margin-left: 10px;
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(asset/img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  left: 9px;
+  top: 18px;
+}
+
+.checked {
+  color: rgb(214, 30, 20);
+  text-decoration: line-through;
+}
+
+.checked::before {
+  background-image: url(asset/img/3d-checkbox-check-mark-3d-illustration_115990-3802.jpg);
+}
+
+li span {
+  position: absolute;
+  right: 10px;
+  bottom: 20%;
+  height: 15px;
+  width: 35px;
+  font-size: 27px;
+  padding-left: 8px;
+  padding-bottom: 40px;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+li span:hover {
+  background-color: rgb(190, 188, 188);
+}
+
+.error {
+  margin: 20px auto;
+  text-align: center;
+  color: red;
+  display: none;
+  font-size: 20px;
+}
+
+@media (max-width: 360px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .addBtn {
+    width: 40%;
+  }
+}
+@media (max-width: 510px) {
+  .todo_list {
+    width: 80%;
+  }
+  .heading h2 {
+    font-size: 35px;
+  }
+  .heading img {
+    height: 43px;
+    width: 43px;
+  }
+}
+@media (max-width: 768px) {
+  .todo_list {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .todo_list {
+    width: 80%;
+  }
+}

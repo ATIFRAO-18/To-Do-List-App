@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./asset/img/icon.png" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo_list">
+        <div class="heading">
+          <h2>To-Do List</h2>
+          <img src="./asset/img/icon.png" alt="" />
+        </div>
+
+        <div class="input" id="one">
+          <input type="text" name="" id="search" placeholder="Add Your Task" />
+          <button class="addBtn" onclick="sendData()">Add</button>
+        </div>
+
+        <div class="error">
+          <p>Please Enter Task First</p>
+        </div>
+
+        <ul class="list-container">
+          <!-- <li class="checked">TASK 1</li>
+          <li>TASK 2</li>
+          <li>TASK 3</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
